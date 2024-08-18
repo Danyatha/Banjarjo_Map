@@ -14,7 +14,7 @@ import { Point, Polygon } from 'ol/geom';
 import Overlay from 'ol/Overlay';
 import Select from 'ol/interaction/Select';
 import CircleStyle from 'ol/style/Circle';
-import { primaryData } from './public/Data/primaryData';
+import { primaryData } from './public/Data/PrimaryData';
 import { secondaryData } from './public/Data/Tempat_Ibadah';
 import { fasilitasUmumData } from './public/Data/Fasilitas_Umum';
 import {posRondaData} from './public/Data/Pos_Ronda';
