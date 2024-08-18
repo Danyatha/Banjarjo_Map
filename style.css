@@ -1,0 +1,286 @@
+@import "node_modules/ol/ol.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+#Mode{
+  position: absolute;
+  top: 50;
+  width: 200px;
+  height: 100px;
+  z-index: 2;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 150px;
+}
+
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: "✖";
+}
+
+#popup-content {
+  color: black;
+  width: flex;
+  
+}
+
+.fill-button {
+  width: auto ;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+}
+
+.ol-viewport .ol-layer:not(.ol-layer-image) .ol-geom-2:hover {
+  fill: none !important;
+  stroke: none !important; 
+}
+
+#status.hide {
+  display: none;
+}
+
+
+.popup-polygon-container{
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  min-width: 200px;
+  left: -50px;
+  overflow: auto;
+  text-wrap: wrap;
+  width: auto;
+}
+
+.navbar{
+  z-index: 9;
+}
+.legend{
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background-color: white !important;
+  min-width: 150px;
+  height: auto;
+  box-shadow: black;
+  padding: 0px 0px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  text-wrap: wrap;
+}
+
+.legend h3{
+  text-align: center;
+}
+.img-icon{
+  width: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.legend table {
+  display: block;
+  width: 100%;
+}
+
+.legend tr {
+  display: block; 
+  margin-bottom: 4px;
+  padding: 1px 1px 1px 1px; 
+}
+
+.legend td{
+  padding: 0px;
+  font-size: small;
+}
+
+.topnav {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav form {
+  display: flex;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-right: 8px;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.clear-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.clear-button:hover {
+  background-color: #45a049;
+}
+
+.results-container {
+  position: absolute;
+  top: 50px; /* Adjust this value based on the height of your search bar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+  z-index: 1000;
+  width: 300px; /* Ensure the width matches the search bar */
+}
+
+.results-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.results-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-list li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  bottom: 12px;
+  left: -50px;
+  
+}
+
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+
+.popup-polygon-container {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.fill-button {
+  position: absolute;
+  left: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  top: 10px;
+  left: 200px;
+}
+
+.fill-button:hover {
+  background-color: #2c5c30;
+}
+
+.legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.img-icon {
+  width: 20px;
+  height: 20px;
+}

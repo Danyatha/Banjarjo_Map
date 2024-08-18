@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Tanpa judul",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Balai Desa Banjarjo" }, "geometry": { "type": "Point", "coordinates": [ 111.1576584, -8.2132413 ] } },
+{ "type": "Feature", "properties": { "Name": "SDN Banjarjo" }, "geometry": { "type": "Point", "coordinates": [ 111.1577442, -8.2128618 ] } },
+{ "type": "Feature", "properties": { "Name": "TK PERTIWI BANJARJO" }, "geometry": { "type": "Point", "coordinates": [ 111.1606773, -8.2127509 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid Abu Bakar" }, "geometry": { "type": "Point", "coordinates": [ 111.1534707, -8.212361 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid Al-Hikmah Karangsono" }, "geometry": { "type": "Point", "coordinates": [ 111.1622993, -8.2105593 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid\/Mushollah" }, "geometry": { "type": "Point", "coordinates": [ 111.1569334, -8.2124952 ] } },
+{ "type": "Feature", "properties": { "Name": "Mushollah AL QARIB" }, "geometry": { "type": "Point", "coordinates": [ 111.1575435, -8.2169256 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid Nurul Iman Banjarjo" }, "geometry": { "type": "Point", "coordinates": [ 111.1620413, -8.2127712 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid Al Huda Punoragi" }, "geometry": { "type": "Point", "coordinates": [ 111.1515691, -8.2103828 ] } },
+{ "type": "Feature", "properties": { "Name": "Masjid Darus Salam" }, "geometry": { "type": "Point", "coordinates": [ 111.159342, -8.206046 ] } }
+]
+}

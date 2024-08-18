@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peta Banjarjo</title>
+  </head>
+  <body>
+
+    <div id="map" class="map-container">
+      <div class="topnav">
+        <form>
+          <input type="text" id="search" class="input" placeholder="Search..">
+          <button id="clear" class="clear-button" type="button">Clear</button>
+        </form>
+    </div>
+    <div class="results-container">
+        <ul class="results-list" id="list"></ul>
+    </div>
+      </div>
+      <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+      </div>
+
+      <div id="popup-polygon" class="popup-polygon-container">
+        <a href="#" id="popup-polygon-closer" class="ol-popup-closer"></a>
+        <div id="popup-content-polygon"></div>
+      </div>
+
+      <div id="map-overlay" class="map-overlay"></div>
+      <button id="fillButton" class="fill-button">Fill Polygon</button>
+      <!-- <div class="legend">
+        <h3>Legenda</h3>
+        <table>
+          <tr>
+            <td><img src="public/bullets.webp" class="img-icon" alt="img-icon"></td>
+            <td>:</td>
+            <td>Nama dusun</td>
+          </tr>
+          <tr>
+            <td><img src="public/bullets.webp" class="img-icon" alt="img-icon"></td>
+            <td>:</td>
+            <td>Nama dusun</td>
+            </tr>
+            <tr>
+              <td><img src="public/bullets.webp" class="img-icon" alt="img-icon"></td>
+              <td>:</td>
+              <td>Nama dusun</td>
+              </tr>
+        </table>
+      </div> -->
+    </div>
+    <span id="status">&nbsp;</span>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
