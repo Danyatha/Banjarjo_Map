@@ -374,11 +374,11 @@ map.on('pointermove', function (e) {
   }
 });
 
-loadGeoJSONLayer('./public/area/galit.geojson', defaultStyle);
-loadGeoJSONLayer('./public/area/gemiring.geojson', defaultStyle);
-loadGeoJSONLayer('./public/area/karangsono.geojson', defaultStyle);
-loadGeoJSONLayer('./public/area/nglaos.geojson', defaultStyle);
-loadGeoJSONLayer('./public/area/towo.geojson', defaultStyle);
+loadGeoJSONLayer('/area/galit.geojson', defaultStyle);
+loadGeoJSONLayer('/area/gemiring.geojson', defaultStyle);
+loadGeoJSONLayer('/area/karangsono.geojson', defaultStyle);
+loadGeoJSONLayer('/area/nglaos.geojson', defaultStyle);
+loadGeoJSONLayer('/area/towo.geojson', defaultStyle);
 
 map.on('click', function (event) {
   const feature = map.forEachFeatureAtPixel(event.pixel, function (feature) {
