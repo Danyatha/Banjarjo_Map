@@ -106,7 +106,7 @@ const secondaryMarkerStyle = new Style ({
 });
 const fasilitasUmumStyle = new Style ({
   image: new Icon ({
-    src : './public/assets/sekolah.png',
+    src : '/assets/sekolah.png',
     scale : 0.12,
     cursor: 'pointer'
   })
@@ -114,14 +114,14 @@ const fasilitasUmumStyle = new Style ({
 
 const posRondaStyle = new Style ({
   image: new Icon ({
-    src : './public/assets/pos_ronda.png',
+    src : '/assets/pos_ronda.png',
     scale : 0.12,
     cursor: 'pointer'
   })
 });
 const pemakamanUmumStyle = new Style({
   image : new Icon ({
-    src : './public/assets/pemakaman.png',
+    src : '/assets/pemakaman.png',
     scale : 0.12,
     cursor: 'pointer',
   }),
@@ -129,28 +129,28 @@ const pemakamanUmumStyle = new Style({
 });
 const kandangTernakStyle = new Style({
   image : new Icon ({
-    src : './public/assets/kandang_ternak.png',
+    src : '/assets/kandang_ternak.png',
     scale : 0.12,
     cursor: 'pointer',
   }),
 });
 const umkmStyle = new Style({
   image : new Icon ({
-    src : './public/assets/umkm.png',
+    src : '/assets/umkm.png',
     scale : 0.12,
     cursor: 'pointer',
   }),
 });
 const kantorDesaStyle = new Style({
   image : new Icon ({
-    src : './public/assets/institusi.png',
+    src : '/assets/institusi.png',
     scale : 0.12,
     cursor: 'pointer',
   }),
 });
 const situsSejarahStyle = new Style({
   image : new Icon ({
-    src : './public/assets/situs_sejarah.png',
+    src : '/assets/situs_sejarah.png',
     scale : 0.12,
     cursor: 'pointer',
   }),
